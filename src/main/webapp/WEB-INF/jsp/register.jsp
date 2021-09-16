@@ -10,31 +10,37 @@
 </head>
 
 <body>
+<body class="text-center">
+
     <p>REGISTER</p>
     <form:form action="registration" method="post" modelAtibute="registrationForm"
-    <p><label for="First Name"> </label>
-        <input type="text" name="" id="First Name" placeholder="First Name" size="30" maxlength="10" />
-    </p>
-    <p></p>
-    <p><label for="Last Name"> </label>
-        <input type="text" name="" id="Last Name" placeholder="Last Name" size="30" maxlength="10" />
-    </p>
-    <p></p>
-    <p><label for="E MAIL"> </label>
-        <input type="text" name="" id="E MAIL" placeholder="E MAIL" size="30" maxlength="10" />
-    </p>
-    <p></p>
-    <p><label for="Password"> </label>
-        <input type="password" name="" id="Password" placeholder="Password" size="30" maxlength="10" />
-    </p>
-    <p></p>
-    <p><label for="Confirm Password"> </label>
-        <input type="password" name="" id="Confirm Password" placeholder="Confirm Password" size="30" maxlength="10" />
-    </p>
-    <p></p>
-    <form action=""></form>
-    <p><button type="submit">REGISTER</button></p>
-    </form>
-</body>
+    <div class="form-floating">
+        <form:input type="firstName" class="form-control" id="floatingInput" placeholder="firstName">
+        <label for="floatingInput">Email address</label>
+      </div>
+      <div class="form-floating">
+        <input type="lastName" class="form-control" id="floatingInput" placeholder="lastName">
+        <label for="floatingInput">Email address</label>
+      </div>
+      <div class="form-floating">
+        <input type="email" class="form-control" id="floatingInput" placeholder="email">
+        <label for="floatingInput">Email address</label>
+      </div>
+      <div class="form-floating">
+        <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+        <label for="floatingPassword">Password</label>
+      </div>
+      <div class="form-floating">
+        <input type="confirmPassword" class="form-control" id="floatingInput" placeholder="confirmPassword">
+        <label for="floatingInput">Email address</label>
+      </div>
 
-</html>
+      <button class="w-100 btn btn-lg btn-primary" type="submit">Sign in</button>
+      <p class="mt-5 mb-3 text-muted">&copy; 2017–2021</p>
+    </form>
+  </main>
+
+
+
+    </body>
+  </html>
