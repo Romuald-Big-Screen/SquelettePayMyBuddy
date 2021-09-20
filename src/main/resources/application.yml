@@ -11,17 +11,17 @@ spring:
       suffix: .jsp
   datasource:
     driverClassName: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/paymybuddy
+    url: jdbc:mysql://localhost:3306/paymybuddysquelette
     username: sans_vaccin
     password: etoile
   jpa:
-    hibernate.ddl-auto: create-drop
+    hibernate.ddl-auto: update
     generate-ddl: true
     show-sql: true
 
 server:
   servlet:
-    context-path: /paymybuddy
+    context-path: /paymybuddysquelette
 
 #Log level configuration
 logging:
